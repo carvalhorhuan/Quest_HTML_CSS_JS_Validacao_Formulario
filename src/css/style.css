@@ -38,8 +38,8 @@ body{
 form {
     display: flex;
     background-color: #FFF;
-    width: 340px;
-    height: 380px;
+    max-width: 340px;
+    max-height: 380px;
     flex-shrink: 0;
     flex-direction: column;
     padding: 20px;
@@ -81,16 +81,8 @@ form {
     line-height: normal;
     padding: 8px 10px;
 }
-.input-group small{
-    display: none;
-    color: #F52E2E;
-    font-family: 'Roboto', sans-serif;
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.erro{
+small.erro{
+    visibility: hidden;
     color: #F52E2E;
     font-family: 'Roboto', sans-serif;
     font-size: 8px;
@@ -120,11 +112,10 @@ form button{
 /* erro e acertos */
 .input-group.correct input{
     border: 1px solid #00C22B;
-    margin-bottom: 10px;
 }
 .input-group.correct textarea{
     border: 1px solid #00C22B;
-    margin-bottom: 10px;
+
 }
 .input-group.error input{
     border: 1px solid #F52E2E;
@@ -132,6 +123,6 @@ form button{
 .input-group.error textarea{
     border: 1px solid #F52E2E;
 }
-.input-group.error small{
-    display: inline;
+small{
+    visibility: visible;
 }
