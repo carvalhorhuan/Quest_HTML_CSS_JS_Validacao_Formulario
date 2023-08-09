@@ -1,7 +1,7 @@
 body{
     background: url(../img/bg-repeat.jpg);
     background-repeat: repeat-x;
-    background-size: 6.68vh;
+    background-size: contain;
     display: flex;
     justify-content: center;
 
