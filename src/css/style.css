@@ -1,0 +1,140 @@
+body{
+    background: url(../img/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: 6.65vh;
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo{
+    width: 320px;
+    margin: 60px
+
+}
+.conteudo h1{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 11px;
+}
+.conteudo p{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+form {
+    display: flex;
+    background-color: #FFF;
+    width: 340px;
+    height: 380px;
+    flex-shrink: 0;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.input-group input{
+    width: 298.013px;
+    height: 35.11px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+.input-group input:placeholder-shown{
+    color: rgba(255, 255, 255, 0.226);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px;
+    flex-shrink: 0;
+}
+.input-group textarea{
+    border: 1px solid #000;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+.input-group textarea:placeholder-shown{
+    color: #A8A8A8;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8px 10px;
+}
+.input-group small{
+    display: none;
+    color: #F52E2E;
+    font-family: Roboto;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.erro{
+    color: #F52E2E;
+    font-family: Roboto;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+form p{
+    color: #000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+form button{
+    flex-shrink: 0;
+    background-color: #3CCC87;
+    color: #FFF;
+    width: 298.013px;
+    height: 41.129px;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+/* erro e acertos */
+.input-group.error input{
+    width: 298.013px;
+    height: 35.11px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #F52E2E;
+    background: #FFF;
+    margin-bottom: 5px;
+}
+.input-group.error small{
+    display: inline;
+}
+
+.input-group.corret input{
+    width: 298.013px;
+    height: 35.11px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #00C22B;
+    margin-bottom: 5px;
+}
