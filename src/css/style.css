@@ -1,7 +1,7 @@
 body{
     background: url(../img/bg-repeat.jpg);
     background-repeat: repeat-x;
-    background-size: 6.65vh;
+    background-size: 6.68vh;
     display: flex;
     justify-content: center;
 
@@ -25,11 +25,11 @@ body{
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
 }
 .conteudo p{
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -42,12 +42,12 @@ form {
     height: 380px;
     flex-shrink: 0;
     flex-direction: column;
-    gap: 10px;
     padding: 20px;
 }
 .input-group{
     display: flex;
     flex-direction: column;
+    padding-bottom: 11px;
 }
 .input-group input{
     width: 298.013px;
@@ -74,7 +74,7 @@ form {
 }
 .input-group textarea:placeholder-shown{
     color: #A8A8A8;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -84,7 +84,7 @@ form {
 .input-group small{
     display: none;
     color: #F52E2E;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 8px;
     font-style: normal;
     font-weight: 400;
@@ -92,7 +92,7 @@ form {
 }
 .erro{
     color: #F52E2E;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 8px;
     font-style: normal;
     font-weight: 400;
@@ -100,7 +100,7 @@ form {
 }
 form p{
     color: #000;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -114,27 +114,24 @@ form button{
     height: 41.129px;
     border: none;
     border-radius: 0.4rem;
+    cursor: pointer;
 }
 
 /* erro e acertos */
+.input-group.correct input{
+    border: 1px solid #00C22B;
+    margin-bottom: 10px;
+}
+.input-group.correct textarea{
+    border: 1px solid #00C22B;
+    margin-bottom: 10px;
+}
 .input-group.error input{
-    width: 298.013px;
-    height: 35.11px;
-    flex-shrink: 0;
-    border-radius: 5px;
     border: 1px solid #F52E2E;
-    background: #FFF;
-    margin-bottom: 5px;
+}
+.input-group.error textarea{
+    border: 1px solid #F52E2E;
 }
 .input-group.error small{
     display: inline;
-}
-
-.input-group.corret input{
-    width: 298.013px;
-    height: 35.11px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    border: 1px solid #00C22B;
-    margin-bottom: 5px;
 }
